@@ -7,11 +7,14 @@ const NavBar = () => {
     <header>
       <nav>
         <div className="left">
-          <div className="logo">
+          <div className="navlogo">
             <img src={logo} alt="amazon_logo" />
           </div>
-          <div>
-            <input type="text" placeholder="Search It!" />
+          <div className="nav_Searchbar">
+            <input type="text" placeholder="Search Your Products" />
+            <div className="search_icon">
+              
+            </div>
           </div>
         </div>
         <div className="right">
