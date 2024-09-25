@@ -16,7 +16,7 @@ const NewNav = () => {
               <p>Today's deal</p>
               <p>Amazon Pay</p>
            </div>
-           <div className="right_data">
+           <div className='right_data'>
 
            </div>
         </div>

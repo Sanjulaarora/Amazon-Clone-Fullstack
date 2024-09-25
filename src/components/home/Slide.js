@@ -1,6 +1,6 @@
 import React from 'react';
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { Divider } from '@mui/material';
 import { products } from './ProductData';
 import './slide.css';
