@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Divider } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 import './slide.css';
 
 const responsive = {
@@ -51,14 +52,16 @@ const Slide = ({title, products}) => {
           { 
             products.map((e) => {
               return (
-                <div className="products_items">
-                  <div className="products_img">
-                    <img src={e.url} alt='productitem' />
+                <NavLink to={`/getproductsindi/${e.id}`}>
+                  <div className="products_items">
+                    <div className="products_img">
+                      <img src={e.url} alt='productitem' />
+                    </div>
+                    <p className="products_name">{e.title.shortTitle}</p>
+                    <p className="products_offer">{e.discount}</p>
+                    <p className="products_explore">{e.tagline}</p>
                   </div>
-                  <p className="products_name">{e.title.shortTitle}</p>
-                  <p className="products_offer">{e.discount}</p>
-                  <p className="products_explore">{e.tagline}</p>
-                </div>
+                </NavLink>
               )
             })
           }
